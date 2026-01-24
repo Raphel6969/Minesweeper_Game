@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #91aec1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.title {
+  font-size: 2em;
+  margin: 0;
+  font-family: "JetBrains Mono";
+  font-weight: 900;
+  font-style: bold;
+  letter-spacing: 5px;
+}
+
+.subtext {
+  font-size: 1.5em;
+  position: absolute;
+  top: 5%;
+  font-family: "JetBrains Mono";
+  font-weight: 900;
+  font-style: bold;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 45px);
+  grid-template-rows: repeat(10, 45px);
+  gap: 1px;
+  margin: 100px 0;
+}
+.cell {
+  background-color: #758a93;
+  border: solid 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag{
+    background-color: yellow;
+}
+
+.reveal{
+    background-color: blue;
+}
+
+.bomb{
+    background-color: red;
+}
