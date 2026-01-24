@@ -10,6 +10,7 @@ let board = document.getElementById("board");
 let mines_left = document.querySelector(".mine_left");
 
 function renderBoard() {
+  RandomizeBomb()
   for (let i = 0; i < grid_size; i++) {
     for (let j = 0; j < grid_size; j++) {
       board.innerHTML += `<div class="cell" id="cell${String(i) + String(j)}"></div>`;
@@ -67,7 +68,12 @@ function revealBox(e) {
 }
 
 function RandomizeBomb() {
-  
+  let bombs = []
+  for(let i = 0; i < total_flags; i++){
+    let bombCoords = Math.floor(Math.random()*(grid_size*grid_size)) //TODO:Getting Duplicates
+    bombs.push(bombCoords)
+  }
+  console.log(bombs)
 }
 
 renderBoard();
@@ -78,3 +84,4 @@ board.addEventListener("contextmenu", (e) => {
   e.preventDefault();
   markFlag(e);
 });
+
