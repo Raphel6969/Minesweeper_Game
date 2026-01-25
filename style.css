@@ -55,3 +55,7 @@ body {
 .bomb{
     background-color: red;
 }
+
+.wrong{
+  background-color: purple;
+}
