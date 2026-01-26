@@ -1,6 +1,6 @@
 const grid_size = 10;
-let total_flags = 20;
 const total_bombs = 20;
+let total_flags = total_bombs;
 let first_click = false;
 let game_running = true;
 const box_set = [

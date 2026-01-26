@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #91aec1;
+  background-image: linear-gradient(to bottom, #43c6ac, #191654);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,16 +31,34 @@ body {
 
 #board {
   display: grid;
-  grid-template-columns: repeat(10, 45px);
-  grid-template-rows: repeat(10, 45px);
+  grid-template-columns: repeat(10, 55px);
+  grid-template-rows: repeat(10, 55px);
   gap: 1px;
-  margin: 100px 0;
+  margin: 0;
   font-family: "JetBrains Mono";
   font-size: 30px;
 }
+
+.container {
+  margin-top: 100px;
+  padding: 40px;
+  display: inline-flex;
+
+  background-color: #7d7d7d0c;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(56, 56, 56, 0.284);
+}
 .cell {
-  background-color: #758a93;
-  border: solid 2px black;
+  /* background-color: #758a93;
+  border: solid 2px black; */
+
+  backdrop-filter: blur(6px) saturate(152%);
+  -webkit-backdrop-filter: blur(6px) saturate(152%);
+  background-color: rgba(91, 91, 93, 0.19);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.262);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +89,4 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
-}
-
-.flag_png {
-  color: red;
 }
