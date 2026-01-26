@@ -35,6 +35,8 @@ body {
   grid-template-rows: repeat(10, 45px);
   gap: 1px;
   margin: 100px 0;
+  font-family: "JetBrains Mono";
+  font-size: 30px;
 }
 .cell {
   background-color: #758a93;
@@ -44,18 +46,33 @@ body {
   justify-content: center;
 }
 
-.flag{
-    background-color: yellow;
+.flag {
+  /* background-color: yellow; */
+  background-image: url("./assets/flag.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
 }
 
-.reveal{
-    background-color: blue;
+.reveal {
+  background-color: rgb(41, 12, 255);
 }
 
-.bomb{
-    background-color: red;
+.bomb {
+  /* background-color: red; */
+  background-image: url("./assets/bomb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
 }
 
-.wrong{
-  background-color: purple;
+.wrong {
+  background-image: url("./assets/wrong.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+.flag_png {
+  color: red;
 }
