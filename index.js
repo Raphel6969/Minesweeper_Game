@@ -76,18 +76,6 @@ function markFlag(e) {
       console.log(`UnFlagged: ${cell.id}`);
     }
 
-    // cell.classList.toggle("flag");
-    // if (cell.classList.contains("flag")) {
-    //   total_flags--;
-    //   mines_left.innerHTML = total_flags;
-    //   console.log(`Flagged: ${cell.id}`);
-    //   grid[cell_data.x][cell_data.y].flagged = true;
-    // } else {
-    //   total_flags++;
-    //   mines_left.innerHTML = total_flags;
-    //   console.log(`UnFlagged: ${cell.id}`);
-    //   grid[cell_data.x][cell_data.y].flagged = false;
-    // }
   }
 }
 
